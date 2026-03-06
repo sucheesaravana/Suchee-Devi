@@ -1,0 +1,17 @@
+#Main-Nav li{
+ list-style-type: none;
+}
+#Main-Nav > ul {
+    background-color: lightpink;
+    padding: 10px;
+}
+
+.active-link {
+    color: white;
+    background-color: blue;
+    
+}
+
+h1, h2 {
+    font-family: Verdana;
+}

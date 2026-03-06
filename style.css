@@ -1,0 +1,25 @@
+h1{
+    color: gray;
+}
+p{
+    color: gray;
+}
+div{
+    color: gray;
+}
+.main{
+    color: blue;
+}
+#Content-Box{
+    width: 400px;
+    border: 1px solid black;
+}
+.Content-Box li{
+     color: green;
+}
+h1, p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.urgent{
+    color: red;
+}
