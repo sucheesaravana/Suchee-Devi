@@ -1,0 +1,9 @@
+.styled-input{
+    width: 300px;
+    padding: 8px 12px;
+    border: 1px solid;
+    margin: 5px;
+}
+.input-group{
+    margin-bottom: 15px;
+}
