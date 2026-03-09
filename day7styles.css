@@ -1,0 +1,26 @@
+.Product-Card{
+    width:300px;
+    border:1px solid yellowgreen;
+    background-color: yellowgreen;
+    position:relative;
+    text-align:center;
+    box-sizing: border-box;
+}
+.Product-Card img{
+    width: 75%;
+}
+.sale-badge{
+    position:absolute;
+    top:-1px;
+    right:-1px;
+    background:red;
+    color:white;
+    padding:5px 5px;
+    font-size:10px;
+    font-weight:bold;
+    border-radius:5px;
+    z-index:5;
+}
+.Product-Card h2 p{
+    display: block;
+}
