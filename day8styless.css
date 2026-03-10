@@ -1,0 +1,12 @@
+.gallery{
+    display: flex;          
+    flex-wrap: wrap;        
+    justify-content: center;
+    background-color: skyblue;
+}
+
+.gallery-item{
+    width: 150px;
+    height: 150px;
+    margin: 30px;           
+}
