@@ -1,0 +1,32 @@
+.calendar {
+    display: grid;
+    grid-template-columns: 100px 3fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
+    gap: 8px;
+    height: 300px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.date {
+    grid-column: 1 / 3;
+    text-align: center;
+    background: darkgreen;
+    padding: 10px;
+    color: aliceblue;
+}
+.morning,
+.afternoon,
+.evening {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.morning-event,
+.afternoon-event,
+.evening-event {
+    background: lightgreen;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
