@@ -1,0 +1,27 @@
+.page-layout {
+  display: flex;
+  flex-direction: column; 
+  background-color: aquamarine;
+}
+main,
+aside {
+  width: 100%;
+  padding: 20px;
+}
+@media (min-width: 992px) {
+
+  .page-layout {
+    flex-direction: row;
+  }
+
+  main {
+    width: 70%;
+    order: 1;
+  }
+
+  aside {
+    width: 30%;
+    order: 2;
+    border-left: 3px solid brown; 
+}
+}

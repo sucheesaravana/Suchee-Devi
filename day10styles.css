@@ -1,0 +1,19 @@
+
+ul {
+  display: flex;
+  flex-direction: column; 
+  background: #333;
+}
+a {
+  display: block;
+  padding: 15px 0; 
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+@media (min-width: 1024px) {
+  ul {
+    flex-direction: row; 
+    justify-content: space-around; 
+}
+}
