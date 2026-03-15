@@ -1,0 +1,124 @@
+*{
+    margin: 0%;
+    
+}
+body{
+    font-family: 'Times New Roman', Times, serif; 
+    background: rgb(115, 150, 63);
+    
+}
+nav{
+    width: 100%;
+    position:fixed;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.nav-content{
+    
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    }
+nav .logo a{
+    font-size: xx-large;
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    }
+
+.nav-content ul{
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    list-style: none; 
+}
+.nav-content li a{
+    padding: 10px;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    transition: -2s;
+}
+.nav-content li a:hover{
+    color: beige;
+}
+.section{
+    background-color: rgb(115, 150, 63);
+    margin-top: auto;
+}
+.section-container{
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+}
+.content{
+    padding-left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+}
+.subtitle{
+    letter-spacing: 2px;
+    color: black;
+    font-size: x-large;
+}
+.title{
+    font-size: xx-large;
+    font-weight: 700 ;
+    color: black;
+}
+.title span{
+    font-weight: 900;
+}
+.description{
+    color: black;
+    font-weight: 600;
+}
+.active_buttons{
+    display: flex;
+    gap: 20px;
+}
+.active_buttons button{
+    font-size: medium;
+    font-weight: 300;
+    padding: 20px;
+    border: transparent;
+}
+.hire_me {
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    transition: -2s;
+}
+.hire_me:hover{
+    color: orange;
+}
+.cv{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    transition: -2s;
+}
+.cv:hover{
+    color:orange ;
+}
+.Image img{
+    width: 450px;
+    border-radius: 50%;
+    margin-top: 25%;
+    
+}
