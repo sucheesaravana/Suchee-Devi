@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 12 mini project</title>
+</head>
+<body>
+    <script>
+        const basePrice = 150;
+        const memberLevel = "Gold";
+
+        let finalPrice = basePrice;
+
+if (memberLevel === "Gold" && basePrice > 100) {
+    finalPrice = finalPrice * 0.8; 
+} 
+else if (memberLevel === "Silver") {
+    finalPrice = finalPrice * 0.9; 
+} 
+else {
+    console.log("No discount applied. Original price:", basePrice);
+}
+console.log("Final Price:", finalPrice);
+    </script>
+</body>
+</html>
