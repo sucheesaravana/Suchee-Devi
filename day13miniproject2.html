@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project 2</title>
+</head>
+<body>
+    <script>
+        
+  const CORRECT_PASSWORD = "secret";
+  let attempts = 0;
+  let isSuccess = false;
+
+
+  while (attempts < 3) {
+ 
+  if (attempts === 1) {
+    isSuccess = true;
+    break;
+  }
+
+  
+  if (attempts === 2) {
+    console.log("Account locked.");
+    break;
+  }
+
+  console.log("Attempt failed, trying again.");
+  attempts++;
+}
+
+if (isSuccess) {
+  console.log("Success: Password correct.");
+}
+    </script>
+</body>
+</html>

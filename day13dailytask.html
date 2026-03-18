@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 13 Task</title>
+</head>
+<body>
+   <script>
+    console.log("1. Basic for Loop:");
+    for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+
+
+    console.log("\n2. Counting Down:");
+    for (let i = 10; i >= 0; i--) {
+    console.log(i);
+}
+
+
+    console.log("\n3. Looping over Array:");
+    const fruits = ["Apple", "Banana", "Cherry"];
+    for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+
+console.log("\n4. While Loop Countdown:");
+let countdown = 5;
+while (countdown >= 0) {
+    console.log(countdown);
+    countdown--;
+}
+
+// 5. Infinite Loop Avoidance
+console.log("\n5. Infinite Loop Note:");
+console.log("If you forget countdown--, the loop will run infinitely.");
+
+// 6. do...while Loop
+console.log("\n6. do...while Loop:");
+let condition = 10;
+do {
+    console.log("Condition value:", condition);
+} while (condition < 10);
+
+// 7. forEach on Array
+console.log("\n7. forEach Loop:");
+fruits.forEach((fruit, index) => {
+    console.log(`Index ${index}: ${fruit}`);
+});
+
+// 8. Using break
+console.log("\n8. Using break:");
+for (let i = 1; i <= 10; i++) {
+    if (i === 7) {
+        break;
+    }
+    console.log(i);
+}
+
+// 9. Using continue
+console.log("\n9. Using continue:");
+for (let i = 1; i <= 10; i++) {
+    if (i === 5) {
+        continue;
+    }
+    console.log(i);
+}
+
+// 10. Looping and Modulus
+console.log("\n10. Even Numbers (Modulus):");
+for (let i = 1; i <= 20; i++) {
+    if (i % 2 === 0) {
+        console.log(i + " is even");
+    }
+}
+   </script> 
+</body>
+</html>
