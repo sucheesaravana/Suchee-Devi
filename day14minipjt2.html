@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 14 Mini Project 2</title>
+</head>
+<body>
+    <script>
+        const isValidArray = (array) => array.length > 3;
+        function processList(array) {
+        if (isValidArray(array)) {
+        console.log("Array length is: " + array.length);
+        } else {
+        console.log("List is too short to process.");
+        }
+        }
+        processList([4, 7]);                 
+        processList([1, 8, 2, 9, 6]);        
+    </script>
+</body>
+</html>
