@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 15 task</title>
+</head>
+<body>
+    <script>
+        const names=["suchee","karmuhilan","ezhil"]
+        names.push("Diana")
+        console.log(names);
+        names.shift()
+        console.log(names);
+
+        const words=["hello", "world", "js"]
+        const newwords=words.map(word =>word.toUpperCase());
+        console.log(newwords);
+        
+        const data = [10, 5, 20]
+        const newdata = data.map(num=>num+1);
+        console.log(newdata);
+
+        const longwords=words.filter(long=> long.length>4);
+        console.log(longwords);
+
+        const temperatures = [32, 10, 25, 40]
+        const temp = temperatures.filter(newtemp => newtemp <30);
+        console.log(temp);
+
+        const totalsum = data.reduce((acc,cur) => acc+cur,0);
+        console.log(totalsum)
+
+        const letters = ["A", "B", "C"]
+        const concatenate = letters.reduce((accumulate,alphabet) =>accumulate + alphabet,"");
+        console.log(concatenate);
+
+        const chain = temperatures.filter(newtemp => newtemp <30) 
+        const remainingtemp = temperatures.filter(nt=>nt>30).reduce((accu,totaltemp)=>accu+totaltemp,0);
+        console.log(remainingtemp);
+    </script>
+</body>
+</html>

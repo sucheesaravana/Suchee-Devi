@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 15 Mini Project 1</title>
+</head>
+<body>
+    <script>
+        const array= [
+            {id : "suchee-01", salary : 50000},
+            {id : "karmuhilan-02", salary : 60000},
+            {id : "ezhil-03", salary : 70000}
+        ];
+        const highsalary = array.filter(hs => hs.salary > 60000);
+        const highsalaryid = highsalary.map(hsid=>hsid.id);
+        console.log(highsalaryid);
+    </script>
+</body>
+</html>

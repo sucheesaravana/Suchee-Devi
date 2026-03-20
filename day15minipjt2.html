@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 15 Mini Project 2</title>
+</head>
+<body>
+    <script>
+      const transaction=[
+        {name : "Handbag" , UnitSold : 5},
+        {name : "Perfume" , UnitSold : 10},
+        {name : "Sandels" , UnitSold : 15
+      }]
+      const totalunit = transaction.reduce((acc,cur)=>acc+cur.UnitSold,0);
+      console.log(`Total Unit sold ${totalunit}`);
+    </script>
+</body>
+</html>
