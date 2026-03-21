@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 16 Task</title>
+</head>
+<body>
+    <script>
+        const car={
+            make:"ford",
+            model:"freestyle",
+            year:2019};
+
+        console.log(car.make);
+
+        var Prop ="year";
+        console.log(car[Prop]);
+
+        car.color = "black";
+        console.log(car);
+
+        car.engine = {hp:200};
+        console.log(car.engine.hp);
+
+        car.describe = function() {
+        return `This car is a ${this.make} ${this.model}`;
+        };
+        console.log(car.describe());
+
+        const dataPoint = { x: 10, y: 20}
+        const jsonstring = JSON.stringify(dataPoint);
+        console.log(jsonstring);
+        const parseddata = JSON.parse(jsonstring);
+        console.log(parseddata);
+
+        const functionremoval = JSON.stringify(car);
+        console.log(functionremoval);
+        
+        
+    </script>
+</body>
+</html>

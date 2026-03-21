@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 16 Mini Project 2</title>
+</head>
+<body>
+    <script>
+        const userdata = {
+            id:101,
+            name:"Suchee",
+        preferenceobj : {
+            color:"yellow",
+            favactor:"superstar",
+            favfood:"fish"
+        },
+        permissionarray:["gardening","cooking","hometuition"]
+        }
+
+        const sentdatastring = JSON.stringify(userdata);
+        console.log(sentdatastring);
+
+        const serverresponse = `{"status": "success", "code": 200}`;
+        const statusobject = JSON.parse(serverresponse);
+        console.log(statusobject);
+
+        if(statusobject.status ==="success") {
+        console.log("data transfered verified!");
+         }    
+
+    </script>
+</body>
+</html>

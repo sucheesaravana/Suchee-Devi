@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 16 Mini project 1</title>
+</head>
+<body>
+    <script>
+        const productitem = {
+            name:"fishtank",
+            baseprice:500,
+            taxrate:0.05,
+        calculatetaxedprice: function(){
+            return this.baseprice + (this.baseprice * this.taxrate);
+        }
+        };
+        const finalPrice = productitem.calculatetaxedprice();
+        console.log("Final Price:", finalPrice);
+
+        const jsondata = JSON.stringify(productitem);
+        console.log(jsondata);
+    </script>
+</body>
+</html>
