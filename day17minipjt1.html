@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 17 Mini Project 1</title>
+
+</head>
+<style>
+
+    .border-highlight {
+    border: 5px solid gold;
+     /* padding: 20px;
+     margin: auto;
+     width: 25%;
+     height: auto; */
+}
+
+</style>
+<body>
+    <div id="gallery">
+        <img class="gallery-item" src="https://www.bing.com/th/id/OIP.KOOipupW_5_J2Yv5CgFH6wHaEK?w=236&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="flower image 1">
+        <img class="gallery-item" src="https://th.bing.com/th/id/OIP.Vtxy0FjT_EfudI4cQk1kzAHaE8?w=281&h=187&c=7&r=0&o=7&pid=1.7&rm=3" alt="flower image 2">
+        <img class="gallery-item" src="https://th.bing.com/th/id/OIP.up20P60mo7PFxZqNVoFCtwHaEY?w=269&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="flower image 3">
+    </div>
+</body>
+<script>
+    const images = document.querySelectorAll("gallery-item");
+    for(i=0; i<images.length; i++){
+        if(i==0){
+            images[i].classList.add(".border-highlight");
+        }
+        if(i==1){
+            images[i].setAttribute("alt","Flowers are Beautiful")
+        }
+    }
+</script>
+</html>
+
+

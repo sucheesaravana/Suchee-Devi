@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 17 Mini Project 2</title>
+</head>
+<body>
+    <div id="output-area">
+
+    </div>
+</body>
+<script>
+    const menuitems = ["Home", "About", "Services", "Contact"];
+    const navList = document.createElement('ul');
+    menuitems.forEach(function(item) {
+        const listitem = document.createElement('li');
+            listitem.textContent = item;    
+            navList.appendChild(listitem);
+    });
+    document.getElementById('output-area').appendChild(navList);
+        
+
+</script>
+</html>
