@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 18 Task</title>
+    <style>
+         #box{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 500px;
+         }   
+         #color-btn{
+            margin-left: 500px;
+         }
+         #text-input{
+            margin-left: 500px;
+         }
+         #myform{
+            margin-left: 500px;
+            margin-top: 10px ;
+         }
+
+    </style>
+</head>
+<body>
+    <button id="color-btn">color Button</button>
+    <div id="box"> </div>
+    <input type="text" id="text-input">
+    <form id="myform">
+        <button type="submit">Submit</button>
+    </form>
+        
+  <script> 
+    const cb= document.getElementById("color-btn");
+    const box = document.getElementById("box");
+
+    cb.addEventListener("click", function () {
+    
+    box.style.backgroundColor = "red";
+    });
+
+    const inputtext = document.getElementById("text-input");
+    inputtext.addEventListener("keyup",function(e){
+        console.log(e.target.value);
+    })
+
+    const mf = document.getElementById("myform");
+    mf.addEventListener("submit",function(e){
+        e.preventDefault();
+        console.log("form submission blocked");
+    });
+
+    box.addEventListener("mouseover",function(){
+    box.style.border = "2px solid black";
+    console.log("Mouse over box");
+    });
+
+    box.addEventListener("mouseout",function(){
+    box.style.border = "";
+    console.log("Mouse out of box");
+    });
+  </script> 
+</body>
+</html>
