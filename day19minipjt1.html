@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 19 Mini Project 1</title>
+</head>
+<body>
+    
+<script>
+    function isPasswordStrong(password) {
+    const hasMinLength = password.length >= 8;
+    const hasUppercase = /[A-Z]/.test(password);
+    const hasDigit = /\d/.test(password);
+
+    return hasMinLength && hasUppercase && hasDigit;
+    }
+
+    const strongPassword = "Suchee@1996";
+    const weakPassword = "aaaa1111";
+
+    console.log( isPasswordStrong(strongPassword)); 
+    console.log( isPasswordStrong(weakPassword));     
+</script>
+</body>
+</html>
