@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 20 Practice</title>
+</head>
+
+<body>
+
+    <h2>Fetch Todo Task</h2>
+    <button id="fetch-task-btn">Get Task</button>
+    <div id="output"></div>
+
+    <script>
+
+        function delayLog() {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    console.log("Promise resolved after 1 second.");
+                    resolve();
+                }, 1000);
+            });
+        }
+
+        delayLog().then(() => {
+            console.log("Then block executed after delayLog");
+        });
+
+        const sampleObj = { id: 5, value: 'test' };
+        const jsonString = JSON.stringify(sampleObj);
+        console.log(jsonString);
+
+        function getTodoTask() {
+
+            fetch("https://jsonplaceholder.typicode.com/todos/1")
+
+                .then(response => {
+                    console.log("Status:", response.status);
+                    return response.json();
+                })
+
+                .then(data => {
+                    console.log("Title:", data.title);
+
+                    const outputDiv = document.getElementById("output");
+                    outputDiv.textContent = data.title;
+                })
+
+                .catch(error => {
+                    console.log("An error occurred.");
+                });
+        }
+
+        document.getElementById("fetch-task-btn").addEventListener("click", getTodoTask);
+    </script>
+</body>
+
+</html>

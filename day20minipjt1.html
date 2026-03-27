@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 20 Mini Project 1</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #refresh-quote{
+            background-color: yellow;
+            border-radius: 20%;
+            padding: 1%;
+        }
+        div{
+            
+            width: 100%;
+            height: 100%;
+            background-color: palegreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+    <p id="quote-text">Quote</p>
+    <p id="quote-author">Author-Name</p>
+    <button id="refresh-quote">Refresh</button>
+    </div>
+    <script>
+
+        function loadquote() {
+            fetch("https://api.kanye.rest/")
+                .then(response => {
+                    return response.json();
+                })
+                .then(data => {
+
+                    document.getElementById("quote-text").textContent = data.quote;
+
+                    document.getElementById("quote-author").textContent = "- Kanye West";
+                })
+
+                .catch(error => {
+                    console.log("Error fetching quote:", error);
+                    document.getElementById("quote-text").textContent = "Failed to load quote.";
+                });
+        }
+
+
+        document.getElementById("refresh-quote").addEventListener("click", loadquote);
+
+        loadquote();
+
+    </script>
+</body>
+
+</html>
